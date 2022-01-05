@@ -1,0 +1,13 @@
+.container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.textt {
+  font-size: 50px;
+  margin-top: 7%;
+  font-family: Source Sans Pro;
+}

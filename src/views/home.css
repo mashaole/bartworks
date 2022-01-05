@@ -1,0 +1,55 @@
+.container {
+  width: 100%;
+  display: flex;
+  overflow: auto;
+  min-height: 100vh;
+  align-items: center;
+  flex-direction: column;
+}
+.Hero {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  padding: var(--dl-space-space-threeunits);
+  min-height: 80vh;
+  align-items: center;
+  flex-direction: column;
+  background-size: cover;
+  justify-content: center;
+  background-image: url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020429/b%20artworks_2021-12-20_19_11/art/vszf4yvzyubtxmgxconi.jpg");
+  background-position: center;
+}
+.navlink {
+  display: contents;
+}
+.text {
+  color: var(--dl-color-gray-white);
+  font-size: 5vh;
+  max-width: 450px;
+  margin-top: var(--dl-space-space-twounits);
+  text-align: center;
+  font-family: Source Sans Pro;
+  padding-top: 25px;
+  padding-left: 25px;
+  margin-bottom: var(--dl-space-space-twounits);
+  padding-right: 25px;
+  padding-bottom: 25px;
+  text-decoration: none;
+  background-color: #000000;
+}
+
+@media (max-width: 767px) {
+  .Hero {
+    padding-left: var(--dl-space-space-twounits);
+    padding-right: var(--dl-space-space-twounits);
+  }
+}
+@media (max-width: 479px) {
+  .Hero {
+    height: 100vh;
+    padding-top: var(--dl-space-space-twounits);
+    padding-left: var(--dl-space-space-unit);
+    padding-right: var(--dl-space-space-unit);
+    padding-bottom: var(--dl-space-space-twounits);
+  }
+}

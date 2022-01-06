@@ -21,7 +21,7 @@ const Artist = () => {
           content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/7842c45c-d554-4849-91d6-abd1a0c1e9f1/922872b4-5d56-48b7-8b12-7043d84f2556?org_if_sml=1"
         />
       </Helmet>
-      <h1 className={styles['text']}>ARTIST</h1>
+      <h1 className={styles['text']}>Artist</h1>
       <div className={styles['Testimonial']}>
         <img
           alt="image"

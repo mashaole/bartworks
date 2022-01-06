@@ -2,21 +2,21 @@
 
 import React from 'react';
 import { Link } from 'react-router-dom';
-import logo from '../../Assets/IAmPresenting.png'
 
+const logo ="https://res.cloudinary.com/ddjvdcads/image/upload/v1641463445/oembsy727jbrkpo7rfde.png"
 var style = {
     backgroundColor: "#fffff",
     textAlign: "center",
     left: "0",
     bottom: "0",
-    height: "auto",
+    height: "50%",
     fontSize: "90%",
     color: "black",
-    padding: "30px",
+    padding: "3px",
     marginRight: "10px",
-    marginTop: "1rem",
-    position: "fixed",
-    width: "100%"
+    position: "relatives",
+    width: "100vw",
+    overflow:"none"
 }
 
 var phantom = {
@@ -30,8 +30,9 @@ function Footer() {
             <div style={phantom} />
             <div style={style}>
                 Copyright © 2021 'Company'.  All rights reserved.No part of this site may be reproduced without our written permission.
-                <hr />
-                <a href="https://www.iampresenting.com"><img src={logo} loading="lazy" alt="IAmPresenting" />
+            
+                <a href="https://www.iampresenting.com">
+                <img src={logo} loading="lazy" alt="IAmPresenting" />
                 </a>
             </div>
         </div >

@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import React, { useState, useEffect,useRef } from 'react'
 import { Link } from 'react-router-dom'
 
 import { Helmet } from 'react-helmet'
@@ -12,8 +12,9 @@ var i = 0;
 
 function Home() {
   const [route, setRoute] = useState("")
+  const funRef = useRef(null);
 
-  useEffect(() => {
+   useEffect(() => {
     setInterval(function () {
       const images = [
         'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020429/b%20artworks_2021-12-20_19_11/art/krcvdb7vnclexhdmr0fz.jpg")',
@@ -28,16 +29,13 @@ function Home() {
       setRoute("/" + headings[i].toLowerCase())
       if (i == (headings.length - 1)) {
         i = 0;
-        //you can even clear interval here to make heading stay as last one in array
-        //cleanInterval(intervalId);
-
       } else {
         i++;
       }
 
-    }, 5000)
-    return () => clearInterval(interval);
-  }, [])
+    }, 7000)
+    return () => clearInterval(funRef.current);
+  },[])
 
   return (
     <div className='container'>

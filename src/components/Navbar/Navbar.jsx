@@ -6,10 +6,11 @@ import './Navbar.css';
 const navTitles = [
 	{id: 1, title: 'Home', route: '/'},
 	{id: 2, title: 'Artworks', route: '/artworks'},
-	{id: 2, title: 'Clothing', route: '/clothing'},
-	{id: 2, title: 'Artist', route: '/artist'},
-	{id: 2, title: 'Exhibitions', route: '/exhibitions'},
-	{id: 2, title: 'Contact Us', route: '/contact'}
+	{id: 3, title: 'Clothing', route: '/clothing'},
+	{id: 4, title: 'Artist', route: '/artist'},
+	{id: 5, title: 'Exhibitions', route: '/exhibitions'},
+	{id: 7, title: 'About Us', route: '/about'},
+	{id: 6, title: 'Contact Us', route: '/contact'},
   ];
 
 const Navbar = () => {
@@ -25,7 +26,7 @@ const Navbar = () => {
 
 	return (
 		<nav className="navbar">
-			<Link to="/" className="nav-logo">
+			<Link to="/" className="nav-logo" onClick={closeMenu}>
 				B Artworks.
 			</Link>
 			<div onClick={handleClick} className="nav-icon">

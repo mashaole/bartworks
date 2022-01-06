@@ -117,6 +117,9 @@
     margin-top: var(--dl-space-space-threeunits);
     margin-bottom: var(--dl-space-space-threeunits);
   }
+  .text {
+    margin-top: 20%;
+  }
 }
 @media (max-width: 767px) {
   .Testimonial {

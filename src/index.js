@@ -20,7 +20,8 @@ const App = () => {
         <Route exact component={Contact} path="/contact" />
         <Route exact component={Artist} path="/artist" />
         <Route exact component={Clothing} path="/clothing" />
-        <Route exact component={Artworks} path="/artworks" />      
+        <Route exact component={Artworks} path="/artworks" /> 
+        <Footer/>     
       </div>
     </Router>
   )

@@ -18,17 +18,13 @@
   border-bottom: 1px solid black;
 }
 
-/* .navbar:hover {
-  opacity: 1;
-} */
-
 .nav-logo {
   text-decoration: none;
 }
 
 .nav-links {
   display: grid;
-  grid-template-columns: repeat(6, auto);
+  grid-template-columns: repeat(7, auto);
   grid-gap: 20px;
   list-style: none;
 }
@@ -55,9 +51,9 @@
   cursor: pointer;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
   .navbar {
-    position: relative;
+    position: fixed;
     z-index: 200;
   }
 

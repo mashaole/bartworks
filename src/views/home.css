@@ -7,11 +7,10 @@
   flex-direction: column;
 }
 .Hero {
-  width: 100vw;
+  width: 99vw;
   height: 100vh;
   display: flex;
   padding: var(--dl-space-space-threeunits);
-  min-height: 80vh;
   align-items: center;
   flex-direction: column;
   background-size: cover;

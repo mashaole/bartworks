@@ -54,6 +54,9 @@
   .container1 {
     grid-template-columns: 1fr 1fr 1fr;
   }
+  .text {
+    margin-top: 10%;
+  }
 }
 @media (max-width: 767px) {
   .Gallery {

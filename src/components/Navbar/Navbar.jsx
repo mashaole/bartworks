@@ -35,10 +35,9 @@ const Navbar = () => {
 			{navTitles.map((item,key)=>
                { return(                
 				   <li className="nav-item" key={key}>
-					<Link to={item.route} className="nav-link" key={item.id}
-					onClick={closeMenu}>
+					<a className="nav-link" href={item.route}>
 						{item.title}
-					</Link>
+					</a>
 				</li>)})}
 			</ul>
 		</nav>

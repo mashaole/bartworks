@@ -39,8 +39,8 @@ const Exhibitions = () => {
             <button class="collapsible" onClick={collapse}>Group Exhibitions</button>
             <div class="content">
                 <ul style={{ listStyleType: 'none' }}>
-                <li><b>2022(Coming Soon)</b></li>
-                <li><b>2021</b></li>
+                    <li><b>2022(Coming Soon)</b></li>
+                    <li><b>2021</b></li>
                     <li>Rebirth (2021) hosted at Brulhart Gallery Gena, Switzerland</li>
                     <li>Connectivity (2021) hosted at Johan van Heerden Art Gallery</li>
                     <li>Art & Design Exhibition (2021) hosted at Gauteng Pop Up Gallery</li>
@@ -62,7 +62,7 @@ const Exhibitions = () => {
             <button class="collapsible" onClick={collapse}>Solo Exhibitions</button>
             <div class="content">
                 <ul style={{ listStyleType: 'none' }}>
-                <li><b>2019</b></li>
+                    <li><b>2019</b></li>
                     <li>Hosea 11:8 How can I abandon you? held at AVA Gallery (2019);</li>
                     <li><b>2018</b></li>
                     <li>Ecclesiastes 3:20 (2018) held at Harrie’s Pancakes;</li>

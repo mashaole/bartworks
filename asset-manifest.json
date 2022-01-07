@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/bartworks/static/css/main.48154104.chunk.css",
+    "main.js": "/bartworks/static/js/main.0e9e69d2.chunk.js",
+    "main.js.map": "/bartworks/static/js/main.0e9e69d2.chunk.js.map",
+    "runtime-main.js": "/bartworks/static/js/runtime-main.65d7ed00.js",
+    "runtime-main.js.map": "/bartworks/static/js/runtime-main.65d7ed00.js.map",
+    "static/js/2.c294c7ee.chunk.js": "/bartworks/static/js/2.c294c7ee.chunk.js",
+    "static/js/2.c294c7ee.chunk.js.map": "/bartworks/static/js/2.c294c7ee.chunk.js.map",
+    "index.html": "/bartworks/index.html",
+    "static/css/main.48154104.chunk.css.map": "/bartworks/static/css/main.48154104.chunk.css.map",
+    "static/js/2.c294c7ee.chunk.js.LICENSE.txt": "/bartworks/static/js/2.c294c7ee.chunk.js.LICENSE.txt"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.65d7ed00.js",
+    "static/js/2.c294c7ee.chunk.js",
+    "static/css/main.48154104.chunk.css",
+    "static/js/main.0e9e69d2.chunk.js"
+  ]
+}

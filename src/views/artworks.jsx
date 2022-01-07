@@ -67,7 +67,7 @@ const Artworks = () => {
         />
         <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/7842c45c-d554-4849-91d6-abd1a0c1e9f1/97dc4012-ad95-41fb-8445-20e3c8ad8529?org_if_sml=1"
+          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020429/b%20artworks_2021-12-20_19_11/art/sk5lafxquus7jlghe8dr.jpg"
         />
       </Helmet>
       <h1 className='textt'>Artworks</h1>

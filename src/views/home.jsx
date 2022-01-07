@@ -49,7 +49,7 @@ function Home() {
         />
         <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/7842c45c-d554-4849-91d6-abd1a0c1e9f1/d7572355-0627-401a-8dd2-6a1f25e9d3ef?org_if_sml=1"
+          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
         />
       </Helmet>
       <div className='Hero'>

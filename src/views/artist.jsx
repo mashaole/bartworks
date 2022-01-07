@@ -18,7 +18,7 @@ const Artist = () => {
         <meta property="og:description" content="Artist - B Artworks" />
         <meta
           property="og:image"
-          content="https://aheioqhobo.cloudimg.io/v7/_playground-bucket-v2.teleporthq.io_/7842c45c-d554-4849-91d6-abd1a0c1e9f1/922872b4-5d56-48b7-8b12-7043d84f2556?org_if_sml=1"
+          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
         />
       </Helmet>
       <h1 className={styles['text']}>Artist</h1>

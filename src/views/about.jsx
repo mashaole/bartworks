@@ -2,7 +2,6 @@ import React from 'react'
 
 import { Helmet } from 'react-helmet'
 
-import FeatureCard2 from '../components/feature-card2'
 import styles from './artist.module.css'
 
 const About = () => {

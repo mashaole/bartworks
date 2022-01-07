@@ -7,6 +7,7 @@ import Home from './views/home.jsx'
 import Artworks from './views/artworks.jsx'
 import Clothing from './views/clothing.jsx'
 import Artist from './views/artist.jsx'
+import Exhibitions from './views/exhibitions'
 import About from './views/about.jsx'
 import Contact from './views/contact.jsx'
 import Navbar from './components/Navbar/Navbar.jsx';
@@ -21,8 +22,10 @@ const App = () => {
         <Route exact component={Artworks} path="/artworks" />
         <Route exact component={Clothing} path="/clothing" />
         <Route exact component={Artist} path="/artist" />
+        <Route exact component={Exhibitions} path="/exhibitions" />
         <Route exact component={About} path="/about" />
         <Route exact component={Contact} path="/contact" />
+
         <Footer />
       </div>
     </Router>

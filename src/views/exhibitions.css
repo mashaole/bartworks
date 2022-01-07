@@ -65,6 +65,7 @@
   color: black;
   width: 50%;
   height: fit-content;
+  margin-bottom: 5%;
 }
 .content li {
   font-size: large;

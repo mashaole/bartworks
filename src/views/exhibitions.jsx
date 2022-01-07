@@ -39,16 +39,18 @@ const Exhibitions = () => {
             <button class="collapsible" onClick={coll}>Group Exhibitions</button>
             <div class="content">
                 <ul style={{ listStyleType: 'none' }}>
+                <li><b>2021</b></li>
                     <li>Rebirth (2021) hosted at Brulhart Gallery Gena, Switzerland</li>
                     <li>Connectivity (2021) hosted at Johan van Heerden Art Gallery</li>
                     <li>Art & Design Exhibition (2021) hosted at Gauteng Pop Up Gallery</li>
+                    <li><b>2020</b></li>
                     <li>Contemporary Arts by African Women (2020) hosted by Gallery Brulhart, Switzerland</li>
                     <li>Together TESE (2020) held at Parkmeadows, Johanesburg</li>
                     <li>Transhumanism (2020) held at The Viewing Room Art Gallery in Pretoria</li>
                     <li>Roaring 20s (2020) hosted by Trent Gallery;</li>
+                    <li><b>2019</b></li>
                     <li>Group exhibition hosted by Mini Sandton Auto (10and5) A3E (2019)</li>
                     <li>Collaboration exhibition held at Trent Gallery, Salt (2019);</li>
-
                     <li>Chui-Ta-Ka-Ma (2019) hosted at Johann van Heerden’s Art Gallery; </li>
                     <li>Rhino Record (2018) hosted by The Afropolitan Gallery; </li>
                     <li>Ontology 1 (2018) presented by Longstreet Art Lovers Gallery, Pretoria;</li>
@@ -59,10 +61,13 @@ const Exhibitions = () => {
             <button class="collapsible" onClick={coll}>Solo Exhibitions</button>
             <div class="content">
                 <ul style={{ listStyleType: 'none' }}>
+                <li><b>2019</b></li>
                     <li>Hosea 11:8 How can I abandon you? held at AVA Gallery (2019);</li>
+                    <li><b>2018</b></li>
                     <li>Ecclesiastes 3:20 (2018) held at Harrie’s Pancakes;</li>
                     <li>Between the lines (2018) hosted at Community Gallery in Durban; </li>
                     <li>Beneath the surface (2018) hosted by Longstreet Art Lovers, Pretoria.</li>
+                    <li><b>2015</b></li>
                     <li>Opening (2015) held at U-Space Gallery in Sunnyside; </li>
                 </ul>
             </div>

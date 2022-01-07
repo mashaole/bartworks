@@ -2,7 +2,7 @@ import React from 'react'
 import { Helmet } from 'react-helmet'
 import './exhibitions.css'
 
-function coll() {
+function collapse() {
     var coll = document.getElementsByClassName("collapsible");
     var i;
 
@@ -36,9 +36,10 @@ const Exhibitions = () => {
                 />
             </Helmet>
             <h1 className='text'>Exhibitions</h1>
-            <button class="collapsible" onClick={coll}>Group Exhibitions</button>
+            <button class="collapsible" onClick={collapse}>Group Exhibitions</button>
             <div class="content">
                 <ul style={{ listStyleType: 'none' }}>
+                <li><b>2022(Coming Soon)</b></li>
                 <li><b>2021</b></li>
                     <li>Rebirth (2021) hosted at Brulhart Gallery Gena, Switzerland</li>
                     <li>Connectivity (2021) hosted at Johan van Heerden Art Gallery</li>
@@ -58,7 +59,7 @@ const Exhibitions = () => {
                     <li>Phase One (2016) and Phase 2.1 (2017) hosted by the Anton van Wouw House, Pretoria; </li>
                 </ul>
             </div>
-            <button class="collapsible" onClick={coll}>Solo Exhibitions</button>
+            <button class="collapsible" onClick={collapse}>Solo Exhibitions</button>
             <div class="content">
                 <ul style={{ listStyleType: 'none' }}>
                 <li><b>2019</b></li>

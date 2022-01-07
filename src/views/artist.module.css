@@ -35,6 +35,11 @@
   object-fit: cover;
   border-radius: var(--dl-radius-radius-round);
 }
+.about {
+  width: var(--dl-size-size-xxlarge);
+  height: var(--dl-size-size-xxlarge);
+  object-fit: scale-down;
+}
 .Testimonial1 {
   display: flex;
   align-items: center;

@@ -41,11 +41,21 @@ const artworks = [
   },
   {
     id: 8,
+    image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1641586507/b%20artworks_2021-12-20_19_11/art/zllvfcgttnbxtyvupgig.jpg',
+    title: 'Mother and Child'
+  },
+  {
+    id: 9,
+    image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1640020424/b%20artworks_2021-12-20_19_11/art/v4n0wwoveucjgsilitke.jpg',
+    title: 'Mother and Child'
+  },
+  {
+    id: 10,
     image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1641583264/b%20artworks_2021-12-20_19_11/art/kvsjfakxha1xbcxqr3zo.jpg',
     title: 'Untitled'
   },
   {
-    id: 9,
+    id: 11,
     image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1641583267/b%20artworks_2021-12-20_19_11/art/v9ebkfq7xupm9hyyickr.png',
     title: 'Untitled'
   },

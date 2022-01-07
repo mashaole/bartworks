@@ -1,6 +1,35 @@
-import React from 'react'
+import React, { useState, useEffect } from 'react'
 import { Helmet } from 'react-helmet'
 import './exhibitions.css'
+import { CarouselWrapper } from "react-pretty-carousel"
+
+const artworks = [
+    {
+        id: 1,
+        image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/nmiwar0ji7vpxiar4xxo.jpg',
+    },
+    {
+        id: 2,
+        image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/vi5sz3q7kgrwko3vreim.jpg',
+    },
+    {
+        id: 6,
+        image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1641596095/b%20artworks_2021-12-20_19_11/exhibit/p4ahjo7kcaewxe9lzhx4.jpg',
+        title: 'Conquer'
+    },
+    {
+        id: 3,
+        image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1640020418/b%20artworks_2021-12-20_19_11/exhibit/oorsoxdrgusqbvyenp1f.jpg',
+    },
+    {
+        id: 4,
+        image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1640020418/b%20artworks_2021-12-20_19_11/exhibit/bvthuzxj1s7onireu6ir.jpg',
+    },
+    {
+        id: 5,
+        image: 'https://res.cloudinary.com/ddjvdcads/image/upload/v1640020419/b%20artworks_2021-12-20_19_11/exhibit/jrgq92z6txakiu05rowy.jpg',
+    },
+];
 
 function collapse() {
     var coll = document.getElementsByClassName("collapsible");
@@ -19,7 +48,20 @@ function collapse() {
     }
 }
 
-const Exhibitions = () => {
+function Exhibitions() {
+    const [view, setView] = useState(4);
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (window.innerWidth <= 991) { setView(1) }
+        }
+
+        window.addEventListener('resize', handleResize)
+
+        return () => window.removeEventListener('resize', handleResize)
+    }, [])
+
+
     return (
         <div className='container'>
             <Helmet>
@@ -36,8 +78,8 @@ const Exhibitions = () => {
                 />
             </Helmet>
             <h1 className='text'>Exhibitions</h1>
-            <button class="collapsible" onClick={collapse}>Group Exhibitions</button>
-            <div class="content">
+            <button className="collapsible" onClick={collapse}>Group Exhibitions</button>
+            <div className="content">
                 <ul style={{ listStyleType: 'none' }}>
                     <li><b>2022(Coming Soon)</b></li>
                     <li><b>2021</b></li>
@@ -59,8 +101,8 @@ const Exhibitions = () => {
                     <li>Phase One (2016) and Phase 2.1 (2017) hosted by the Anton van Wouw House, Pretoria; </li>
                 </ul>
             </div>
-            <button class="collapsible" onClick={collapse}>Solo Exhibitions</button>
-            <div class="content">
+            <button className="collapsible" onClick={collapse}>Solo Exhibitions</button>
+            <div className="content">
                 <ul style={{ listStyleType: 'none' }}>
                     <li><b>2019</b></li>
                     <li>Hosea 11:8 How can I abandon you? held at AVA Gallery (2019);</li>
@@ -72,6 +114,15 @@ const Exhibitions = () => {
                     <li>Opening (2015) held at U-Space Gallery in Sunnyside; </li>
                 </ul>
             </div>
+
+            <CarouselWrapper items={view} mode="gallery" showControls={false}>
+                {artworks.map((item, key) => {
+                    return (
+                        <a key={item.id} href={item.image}>
+                            <img src={item.image} className="exhibit" alt={"image1"} />
+                        </a>)
+                })}
+            </CarouselWrapper>
         </div>
     )
 }

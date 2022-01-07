@@ -71,3 +71,9 @@
 .content li {
   font-size: large;
 }
+.exhibit {
+  display: flex;
+  margin: auto;
+  height: 30vh;
+  width: max-content;
+}

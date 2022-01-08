@@ -1,8 +1,7 @@
 {
-  "homepage": "http://mashaole.github.io/bartworks",
   "name": "b-artworks",
   "version": "1.0.0",
-  "private": false,
+  "private": true,
   "dependencies": {
     "prop-types": "15.7.2",
     "react": "^16.13.1",
@@ -15,8 +14,6 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject"

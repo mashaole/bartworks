@@ -97,21 +97,17 @@
   display: flex;
   padding: var(--dl-space-space-threeunits);
   max-width: var(--dl-size-size-maxwidth);
-  align-self: center;
-  margin-bottom: 5%;
   flex-direction: column;
 }
 .text10 {
   font-size: 3rem;
   align-self: center;
-  font-family: Source Sans Pro;
   margin-bottom: var(--dl-space-space-threeunits);
 }
 .container3 {
-  width: 999px;
+  width: 100%;
   display: grid;
   grid-gap: var(--dl-space-space-twounits);
-  align-self: center;
   grid-template-columns: 1fr 1fr;
 }
 @media (max-width: 991px) {

@@ -6,6 +6,7 @@
   align-items: center;
   flex-direction: column;
   justify-content: flex-start;
+  margin-bottom: 70px;
 }
 .text {
   font-size: 50px;
@@ -49,7 +50,7 @@
 }
 .icon2 {
   top: 69px;
-  right: 0px;
+  right: 0;
   width: 141px;
   height: 80px;
   position: absolute;
@@ -92,9 +93,12 @@
   .container1 {
     width: 50%;
   }
+  .icon {
+    left: -20px;
+  }
   .icon2 {
     top: 70px;
-    right: 0px;
+    right: -20px;
     width: 150px;
     height: 80px;
     position: absolute;

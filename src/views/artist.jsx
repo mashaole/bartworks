@@ -42,7 +42,7 @@ const Artist = () => {
               Boitumelo Diseko&apos;s artworks are rooted in environmental
               psychology and the Christian faith. Diseko&apos;s work looks at
               how the environment affects us as human beings and how God uses it
-              to build our character .Environmental psychology is a
+              to build our character. Environmental psychology is a
               multidimensional field that focuses on the interplay between
               individuals and their surroundings. It examines the way in which
               the natural environment and our built environments shap us as

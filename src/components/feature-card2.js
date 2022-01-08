@@ -14,7 +14,7 @@ const FeatureCard2 = (props) => {
       </svg>
       <div className={styles['container']}>
         <h2 className={styles['text']}>{props.title}</h2>
-        <span className={styles['text1']}>{props.description}</span>
+        <span>{props.description}</span>
       </div>
     </div>
   )

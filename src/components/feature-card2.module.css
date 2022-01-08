@@ -21,16 +21,11 @@
   justify-content: flex-start;
 }
 .text {
-  font-family: Source Sans Pro;
   font-weight: 600;
   margin-bottom: var(--dl-space-space-unit);
 }
-.text1 {
-  font-family: Source Sans Pro;
-}
 
-
-@media(max-width: 767px) {
+@media (max-width: 767px) {
   .FeatureCard {
     flex-direction: row;
   }
@@ -38,7 +33,7 @@
     flex-direction: column;
   }
 }
-@media(max-width: 479px) {
+@media (max-width: 479px) {
   .container {
     flex-direction: column;
   }

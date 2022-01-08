@@ -77,3 +77,12 @@
   height: 30vh;
   width: max-content;
 }
+@media only screen and (max-width: 991px) {
+  .exhibit {
+    display: flex;
+    margin: auto;
+    height: 30vh;
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}

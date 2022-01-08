@@ -12,7 +12,7 @@ img {
   display: flex;
   margin: auto;
   height: 80vh;
-  width: max-content;
+  width: auto;
 }
 .textt {
   font-size: 50px;

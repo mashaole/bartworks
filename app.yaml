@@ -1,4 +1,4 @@
-service: bartworks
+service: default
 
 runtime: nodejs14
 handlers:

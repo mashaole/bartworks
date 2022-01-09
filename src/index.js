@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useState,useEffect} from 'react'
 import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
@@ -13,7 +13,24 @@ import Contact from './views/contact.jsx'
 import Navbar from './components/Navbar/Navbar.jsx';
 import Footer from './components/Footer/Footer.jsx'
 
-const App = () => {
+function App () {
+
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+    setLoading(false)
+    }, 1500)
+  }, [])
+
+  if(loading){
+    return (
+      <div style={{height:"100vh",width:"100vw"}} >
+      <img  style={{display:"block", marginTop:"250px",width:"350px",height:"30%"}} src="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/tpquxqzqvj8pejyi367q.png" alt="" />
+    </div>
+    );
+  }
+  else{
   return (
     <Router>
       <div>
@@ -25,11 +42,11 @@ const App = () => {
         <Route exact component={Exhibitions} path="/exhibitions" />
         <Route exact component={About} path="/about" />
         <Route exact component={Contact} path="/contact" />
-
         <Footer />
       </div>
     </Router>
   )
+}
 }
 
 ReactDOM.render(<App />, document.getElementById('app'))

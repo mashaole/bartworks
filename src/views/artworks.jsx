@@ -1,7 +1,7 @@
-import React from 'react'
+import React,{useEffect,useState} from 'react'
 import './artworks.css'
 import { Helmet } from 'react-helmet'
-import { CarouselWrapper } from "react-pretty-carousel"
+import { CarouselWrapper,next,prev } from "react-pretty-carousel"
 
 const artworks = [
   {
@@ -61,7 +61,19 @@ const artworks = [
   },
 ];
 
-const Artworks = () => {
+function Artworks ()  {
+  const [view, setView] = useState(1);
+
+  useEffect(() => {
+      const handleResize = () => {
+          if (window.innerWidth >= 1200) { setView(3) }
+      }
+
+      window.addEventListener('resize', handleResize)
+
+      return () => window.removeEventListener('resize', handleResize)
+  }, [])
+
   return (
     <div className='container'>
       <Helmet>
@@ -81,7 +93,9 @@ const Artworks = () => {
         />
       </Helmet>
       <h1 className='textt'>Artworks</h1>
-      <CarouselWrapper items={1} mode="gallery">
+      <br/>
+      <div id="arrow-left" className="arrow" onClick={()=>{prev()}}/>
+      <CarouselWrapper items={view} mode="gallery" showControls={false}>
         {artworks.map((item, key) => {
           return (
             <a key={item.id}>
@@ -93,6 +107,7 @@ const Artworks = () => {
             </a>)
         })}
       </CarouselWrapper>
+      <div id="arrow-right" className="arrow" onClick={()=>{next()} }/>
     </div >
   )
 }

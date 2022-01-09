@@ -17,7 +17,31 @@
   justify-content: center;
   background-image: url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020429/b%20artworks_2021-12-20_19_11/art/vszf4yvzyubtxmgxconi.jpg");
   background-position: center;
+
+  -webkit-animation: myfirst 5s; /* Chrome, Safari, Opera */
+  animation: myfirst 5s;
 }
+
+/* Chrome, Safari, Opera */
+@-webkit-keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Standard syntax */
+@keyframes myfirst {
+  from {
+    opacity: 0.2;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 .navlink {
   display: contents;
 }

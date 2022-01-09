@@ -11,14 +11,14 @@ var headings = ['ARTWORKS', 'CLOTHING', 'ARTIST', 'EXHIBITIONS'];
 var i = 0;
 
 function Home() {
-  const [route, setRoute] = useState("")
+  const [route, setRoute] = useState("/artworks")
   const funRef = useRef(null);
 
    useEffect(() => {
     setInterval(function () {
       const images = [
-        'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020429/b%20artworks_2021-12-20_19_11/art/krcvdb7vnclexhdmr0fz.jpg")',
-        'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020428/b%20artworks_2021-12-20_19_11/art/bjq1ut5qhignr9t0jdk3.jpg")',
+        'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1641631083/b%20artworks_2021-12-20_19_11/art/qsoonv9qcwkeawy11ro4.jpg")',
+        'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1641631081/b%20artworks_2021-12-20_19_11/art/epfavozgigmq87ygp2jg.jpg")',
         'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020431/b%20artworks_2021-12-20_19_11/art/viavexxb8mxuoyvd2yra.jpg")',
         'url("https://res.cloudinary.com/ddjvdcads/image/upload/v1640020441/b%20artworks_2021-12-20_19_11/art/vmpv8yabk910qvzqweeu.jpg")',
       ]

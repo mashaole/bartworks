@@ -78,7 +78,7 @@ function Exhibitions() {
                 />
             </Helmet>
             <h1 className='text'>Exhibitions</h1>
-            <button className="collapsible" onClick={collapse}>Group Exhibitions</button>
+            <div className="collapsible" onClick={collapse}>Group Exhibitions</div>
             <div className="content">
                 <ul style={{ listStyleType: 'none' }}>
                     <li><b>2022(Coming Soon)</b></li>
@@ -101,7 +101,7 @@ function Exhibitions() {
                     <li>Phase One (2016) and Phase 2.1 (2017) hosted by the Anton van Wouw House, Pretoria; </li>
                 </ul>
             </div>
-            <button className="collapsible" onClick={collapse}>Solo Exhibitions</button>
+            <div className="collapsible" onClick={collapse}>Solo Exhibitions</div>
             <div className="content">
                 <ul style={{ listStyleType: 'none' }}>
                     <li><b>2019</b></li>
@@ -119,7 +119,7 @@ function Exhibitions() {
                 {artworks.map((item, key) => {
                     return (
                         <a key={item.id} href={item.image}>
-                            <img src={item.image} className="exhibit" alt={"image1"} />
+                            <img loading="lazy" src={item.image} className="exhibit" alt={"image1"} />
                         </a>)
                 })}
             </CarouselWrapper>

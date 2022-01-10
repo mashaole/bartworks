@@ -13,6 +13,7 @@ const GalleryCard3 = (props) => {
         alt={props.image_alt}
         src={props.image_src}
         className={styles['image']}
+        loading="lazy"
       />
       <div className={styles['container']}>
         <h1 className={styles['text']}>{props.title}</h1>

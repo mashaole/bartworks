@@ -27,6 +27,7 @@ const Artist = () => {
           alt="image"
           src="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
           className={styles['image']}
+          loading="lazy"
         />
         <div className={styles['Testimonial1']}>
           <div className={styles['container1']}>

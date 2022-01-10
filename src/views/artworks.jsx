@@ -99,7 +99,7 @@ function Artworks ()  {
         {artworks.map((item, key) => {
           return (
             <a key={item.id}>
-              <img src={item.image} alt={"image1"} />
+              <img loading="eager" src={item.image} alt={"image1"}  />
               <br />
               <div style={{ width: "100%", textAlign: "center" }}>
                 {item.title}</div>

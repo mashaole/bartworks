@@ -71,6 +71,7 @@ const Contact = () => {
         alt="image"
         src="https://res.cloudinary.com/ddjvdcads/image/upload/v1641151042/b%20artworks_2021-12-20_19_11/art/l1dz8xoo9kv3eqb9dazi.png"
         className={styles['image']}
+        loading="lazy"
       />
     </div>
   )

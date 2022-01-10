@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import ReactDOM from 'react-dom'
+import { hydrate, render } from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './style.module.css'
@@ -26,7 +26,7 @@ function App () {
   if(loading){
     return (
       <div style={{height:"100vh",width:"100vw"}} >
-      <img  style={{display:"block", marginTop:"250px",width:"350px",height:"30%"}} src="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/tpquxqzqvj8pejyi367q.png" alt="" />
+      <img  style={{display:"block", marginTop:"250px",width:"350px",height:"30%"}} loading="lazy" src="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/tpquxqzqvj8pejyi367q.png" alt="" />
     </div>
     );
   }
@@ -49,4 +49,9 @@ function App () {
 }
 }
 
-ReactDOM.render(<App />, document.getElementById('app'))
+const rootElement = document.getElementById("app");
+if (rootElement.hasChildNodes()) {
+  hydrate(<App />, rootElement);
+} else {
+  render(<App />, rootElement);
+}

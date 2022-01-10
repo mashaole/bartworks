@@ -26,6 +26,7 @@ const About = () => {
           alt="image"
           src="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/tpquxqzqvj8pejyi367q.png"
           className={styles['about']}
+          loading="lazy"
         />
         <div className={styles['Testimonial1']}>
           <div className={styles['container1']}>

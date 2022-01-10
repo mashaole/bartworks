@@ -1,5 +1,5 @@
 import React,{useState,useEffect} from 'react'
-import { hydrate, render } from 'react-dom'
+import ReactDOM from 'react-dom'
 import { BrowserRouter as Router, Route } from 'react-router-dom'
 
 import './style.module.css'
@@ -49,9 +49,4 @@ function App () {
 }
 }
 
-const rootElement = document.getElementById("app");
-if (rootElement.hasChildNodes()) {
-  hydrate(<App />, rootElement);
-} else {
-  render(<App />, rootElement);
-}
+ReactDOM.render(<App />, document.getElementById('app'))

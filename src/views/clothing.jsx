@@ -9,15 +9,15 @@ const Clothing = () => {
   return (
     <div className={styles['container']}>
       <Helmet>
-        <title>Clothing - B Artworks</title>
+        <title>Clothing - B Artworks Gallery</title>
         <meta
           name="description"
-          content="View Some of B Artworks beautiful clothing designs."
+          content="View Some of B Artworks beautiful clothing in the gallery."
         />
-        <meta property="og:title" content="Clothing - B Artworks" />
+        <meta property="og:title" content="Clothing - B Artworks Gallery" />
         <meta
           property="og:description"
-          content="View Some of B Artworks beautiful clothing designs."
+          content="View Some of B Artworks beautiful clothing in the gallery."
         />
         <meta
           property="og:image"

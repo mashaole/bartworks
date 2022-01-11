@@ -9,13 +9,13 @@ const Artist = () => {
   return (
     <div className={styles['container']}>
       <Helmet>
-        <title>Artist - B Artworks</title>
+        <title>Artist - B Artworks Gallery</title>
         <meta
           name="description"
-          content="Boitumelo Diseko's artworks are rooted in environmental psychology and the Christian faith."
+          content="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks"
         />
-        <meta property="og:title" content="Artist - B Artworks" />
-        <meta property="og:description" content="Artist - B Artworks" />
+        <meta property="og:title" content="Artist - B Artworks Gallery" />
+        <meta property="og:description" content="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks" />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"

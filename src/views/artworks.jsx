@@ -77,12 +77,12 @@ function Artworks ()  {
   return (
     <div className='container'>
       <Helmet>
-        <title>Artworks - B Artworks</title>
+        <title>Artworks - B Artworks Gallery</title>
         <meta
           name="description"
-          content="View some of the B Artworks and Aspire to Inspire"
+          content="View some of the B Artworks and Aspire to Inspire."
         />
-        <meta property="og:title" content="Artworks - B Artworks" />
+        <meta property="og:title" content="Artworks - B Artworks Gallery" />
         <meta
           property="og:description"
           content="View some of the B Artworks and Aspire to Inspire."

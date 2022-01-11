@@ -65,13 +65,13 @@ function Exhibitions() {
     return (
         <div className='container'>
             <Helmet>
-                <title>Artist - B Artworks</title>
+                <title>Artist - B Artworks Gallery</title>
                 <meta
                     name="description"
                     content="View some of B Artworks Exhibitions"
                 />
-                <meta property="og:title" content="Artist - B Artworks" />
-                <meta property="og:description" content="Artist - B Artworks" />
+                <meta property="og:title" content="Artist - B Artworks Gallery" />
+                <meta property="og:description" content="View some of B Artworks Exhibitions" />
                 <meta
                     property="og:image"
                     content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"

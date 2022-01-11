@@ -40,12 +40,12 @@ function Home() {
   return (
     <div className='container'>
       <Helmet>
-        <title>Home - B Artworks</title>
-        <meta name="description" content="Be Artworks and Aspire to Inspire" />
+        <title>Home - B Artworks Gallery</title>
+        <meta name="description" content="B Artworks Gallery Be Artworks and Aspire to Inspire. View Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions." />
         <meta property="og:title" content="Home - B Artworks" />
         <meta
           property="og:description"
-          content="Be Artworks and Aspire to Inspire"
+          content="B Artworks Gallery Be Artworks and Aspire to Inspire. View Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions."
         />
         <meta
           property="og:image"

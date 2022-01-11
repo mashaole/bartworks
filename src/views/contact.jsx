@@ -8,12 +8,12 @@ const Contact = () => {
   return (
     <div className={styles['container']}>
       <Helmet>
-        <title>Contact - B Artworks</title>
+        <title>Contact - B Artworks Gallery</title>
         <meta
           name="description"
           content="Find us on our all Social media  platforms."
         />
-        <meta property="og:title" content="Contact - B Artworks" />
+        <meta property="og:title" content="Contact - B Artworks Gallery" />
         <meta
           property="og:description"
           content="Find us on our all Social media  platforms."

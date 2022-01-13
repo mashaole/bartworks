@@ -42,6 +42,7 @@ function App () {
         <Route exact component={Exhibitions} path="/exhibitions" />
         <Route exact component={About} path="/about" />
         <Route exact component={Contact} path="/contact" />
+        <Footer/>
       </div>
     </Switch>
   )

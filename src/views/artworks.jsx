@@ -1,4 +1,4 @@
-import React,{useEffect,useState} from 'react'
+import React,{useEffect,useState,useRef} from 'react'
 import './artworks.css'
 import { Helmet } from 'react-helmet'
 import { CarouselWrapper,next,prev } from "react-pretty-carousel"
@@ -63,19 +63,30 @@ const artworks = [
 
 function Artworks ()  {
   const [view, setView] = useState(1);
+  const page = useRef();
+
+  const handleResize = () => {
+    if (window.innerWidth >= 1200) { setView(3) }
+}
+ 
 
   useEffect(() => {
-      const handleResize = () => {
-          if (window.innerWidth >= 1200) { setView(3) }
-      }
-
+    handleResize()
+    if (page.current) {
+      page.current.scrollIntoView(
+        {
+          behavior: 'smooth',
+          block: 'end',
+          inline: 'nearest'
+        })
+    }
       window.addEventListener('resize', handleResize)
 
       return () => window.removeEventListener('resize', handleResize)
   }, [])
 
   return (
-    <div className='container'>
+    <div className='container' ref={page}>
       <Helmet>
         <title>Artworks - B Artworks Gallery</title>
         <meta

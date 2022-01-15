@@ -13,7 +13,9 @@ img {
   display: flex;
   margin: auto;
   height: 80vh;
-  width: auto;
+  width: 100%;
+  max-width: 100vh;
+  object-fit: contain;
 }
 .textt {
   font-size: 50px;
@@ -32,8 +34,8 @@ img {
 .arrow {
   cursor: pointer;
   position: absolute;
-  top: 40%;
-  margin-top: -30px;
+  top: 50%;
+  margin-top: 10%;
   width: 0;
   height: 0;
   border-style: solid;
@@ -60,5 +62,14 @@ img {
   }
   .arrow {
     top: 40%;
+    margin-top: 40%;
+  }
+  img {
+    display: flex;
+    margin: auto;
+    height: 55vh;
+    width: 100%;
+    max-width: 100vh;
+    object-fit: contain;
   }
 }

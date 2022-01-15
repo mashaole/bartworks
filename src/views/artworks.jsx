@@ -105,20 +105,24 @@ function Artworks ()  {
       </Helmet>
       <h1 className='textt'>Artworks</h1>
       <br/>
-      <div id="arrow-left" className="arrow" onClick={()=>{prev()}}/>
+      <div id="arrow-left" className="arrow" onClick={()=>{prev()}}>
+      <i className="fas fa-arrow-left"></i>
+      </div>
       <CarouselWrapper items={view} mode="gallery" showControls={false}>
         {artworks.map((item, key) => {
           return (
             <a key={item.id}>
               <img loading="eager" src={item.image} alt={"image1"}  />
               <br />
-              <div style={{ width: "100%", textAlign: "center" }}>
+              <div className="caption" >
                 {item.title}</div>
               <br />
             </a>)
         })}
       </CarouselWrapper>
-      <div id="arrow-right" className="arrow" onClick={()=>{next()} }/>
+      <div id="arrow-right" className="arrow" onClick={()=>{next()} }>
+      <i className="fas fa-arrow-right"></i>
+      </div>
     </div >
   )
 }

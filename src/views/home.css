@@ -59,6 +59,7 @@
   padding-bottom: 25px;
   text-decoration: none;
   background-color: #000000;
+  box-shadow: 0 3px 14px white;
 }
 
 @media (max-width: 767px) {

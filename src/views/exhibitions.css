@@ -85,4 +85,11 @@
     width: 200px;
     margin-bottom: 40px;
   }
+  .collapsible {
+    width: 80%;
+  }
+
+  .content {
+    width: 80%;
+  }
 }

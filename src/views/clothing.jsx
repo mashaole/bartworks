@@ -14,6 +14,10 @@ const Clothing = () => {
           name="description"
           content="View Some of B Artworks beautiful clothing in the gallery."
         />
+   <meta
+      name="keywords"
+      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+    />
         <meta property="og:title" content="Clothing - B Artworks Gallery" />
         <meta
           property="og:description"

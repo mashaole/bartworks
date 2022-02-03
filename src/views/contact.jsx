@@ -13,6 +13,10 @@ const Contact = () => {
           name="description"
           content="Find us on our all Social media  platforms."
         />
+             <meta
+      name="keywords"
+      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+    />
         <meta property="og:title" content="Contact - B Artworks Gallery" />
         <meta
           property="og:description"

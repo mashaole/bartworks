@@ -14,6 +14,10 @@ const Artist = () => {
           name="description"
           content="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks"
         />
+  <meta
+      name="keywords"
+      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+    />
         <meta property="og:title" content="Artist - B Artworks Gallery" />
         <meta property="og:description" content="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks" />
         <meta

@@ -98,6 +98,10 @@ function Artworks ()  {
           property="og:description"
           content="View some of the B Artworks and Aspire to Inspire."
         />
+  <meta
+      name="keywords"
+      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+    />
         <meta
           property="og:image"
           content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020429/b%20artworks_2021-12-20_19_11/art/sk5lafxquus7jlghe8dr.jpg"

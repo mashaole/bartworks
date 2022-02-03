@@ -65,12 +65,16 @@ function Exhibitions() {
     return (
         <div className='container'>
             <Helmet>
-                <title>Artist - B Artworks Gallery</title>
+                <title>Exhibitions - B Artworks Gallery</title>
                 <meta
                     name="description"
                     content="View some of B Artworks Exhibitions"
                 />
-                <meta property="og:title" content="Artist - B Artworks Gallery" />
+                     <meta
+      name="keywords"
+      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+    />
+                <meta property="og:title" content="Exhibitions - B Artworks Gallery" />
                 <meta property="og:description" content="View some of B Artworks Exhibitions" />
                 <meta
                     property="og:image"

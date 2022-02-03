@@ -1,14 +1,15 @@
 import React, { useState, useEffect,useRef } from 'react'
-import { Link } from 'react-router-dom'
-
-import { Helmet } from 'react-helmet'
-
+import Meta from "../components/meta"
 import './home.css'
-//var route = ""
 
 var headings = ['ARTWORKS', 'CLOTHING', 'ARTIST', 'EXHIBITIONS'];
 
 var i = 0;
+var description="B Artworks Gallery Be Artworks and Aspire to Inspire. View Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions."
+var title="Home - B Artworks Gallery"
+var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
+
 
 function Home() {
   const [route, setRoute] = useState("/artworks")
@@ -39,23 +40,7 @@ function Home() {
 
   return (
     <div className='container'>
-      <Helmet>
-        <title>Home - B Artworks Gallery</title>
-        <meta name="description" content="B Artworks Gallery Be Artworks and Aspire to Inspire. View Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions." />
-        <meta property="og:title" content="Home - B Artworks" />
-        <meta
-      name="keywords"
-      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-    />
-        <meta
-          property="og:description"
-          content="B Artworks Gallery Be Artworks and Aspire to Inspire. View Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions."
-        />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
-        />
-      </Helmet>
+      <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
       <div className='Hero'>
         <a href={route}>
           <h1 className='text'>ARTWORKS</h1>

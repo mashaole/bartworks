@@ -1,7 +1,12 @@
 import React, { useState, useEffect } from 'react'
-import { Helmet } from 'react-helmet'
 import './exhibitions.css'
 import { CarouselWrapper } from "react-pretty-carousel"
+import Meta from "../components/meta"
+
+var description="View some of B Artworks Exhibitions."
+var title="Exhibitions - B Artworks Gallery"
+var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
 
 const artworks = [
     {
@@ -64,23 +69,7 @@ function Exhibitions() {
 
     return (
         <div className='container'>
-            <Helmet>
-                <title>Exhibitions - B Artworks Gallery</title>
-                <meta
-                    name="description"
-                    content="View some of B Artworks Exhibitions"
-                />
-                     <meta
-      name="keywords"
-      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-    />
-                <meta property="og:title" content="Exhibitions - B Artworks Gallery" />
-                <meta property="og:description" content="View some of B Artworks Exhibitions" />
-                <meta
-                    property="og:image"
-                    content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
-                />
-            </Helmet>
+    <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
             <h1 className='text'>Exhibitions</h1>
             <div className="collapsible" onClick={collapse}>Group Exhibitions</div>
             <div className="content">

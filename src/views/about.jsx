@@ -1,25 +1,16 @@
 import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
+import Meta from "../components/meta"
 import styles from './artist.module.css'
+
+var description="View more informtion about B Artworks Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions."
+var title="About Us - B Artworks Gallery"
+var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
 
 const About = () => {
   return (
     <div className={styles['container']}>
-      <Helmet>
-        <title>About Us - B Artworks Gallery</title>
-        <meta
-          name="description"
-          content="View more informtion about B Artworks Galleries ,Paintings, Artworks, Clothing Designs and Exhibitions."
-        />
-        <meta property="og:title" content="About Us - B Artworks Gallery" />
-        <meta property="og:description" content="View more informtion about B Artworks paintings ,gallery ,clothing ,art ,potraits, story and vision." />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
-        />
-      </Helmet>
+      <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
       <h1 className={styles['text']}>About Us</h1>
       <div className={styles['Testimonial']}>
         <img

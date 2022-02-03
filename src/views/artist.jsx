@@ -1,30 +1,17 @@
 import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
+import Meta from "../components/meta"
 import FeatureCard2 from '../components/feature-card2'
 import styles from './artist.module.css'
+
+var description="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks"
+var title="Artist - B Artworks Gallery"
+var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
 
 const Artist = () => {
   return (
     <div className={styles['container']}>
-      <Helmet>
-        <title>Artist - B Artworks Gallery</title>
-        <meta
-          name="description"
-          content="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks"
-        />
-  <meta
-      name="keywords"
-      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-    />
-        <meta property="og:title" content="Artist - B Artworks Gallery" />
-        <meta property="og:description" content="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks" />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
-        />
-      </Helmet>
+     <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
       <h1 className={styles['text']}>Artist</h1>
       <div className={styles['Testimonial']}>
         <img

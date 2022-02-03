@@ -1,32 +1,16 @@
 import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
 import styles from './contact.module.css'
+import Meta from "../components/meta"
+
+var description="Find us on our all Social media  platforms."
+var title="Contact - B Artworks Gallery"
+var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
 
 const Contact = () => {
   return (
     <div className={styles['container']}>
-      <Helmet>
-        <title>Contact - B Artworks Gallery</title>
-        <meta
-          name="description"
-          content="Find us on our all Social media  platforms."
-        />
-             <meta
-      name="keywords"
-      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-    />
-        <meta property="og:title" content="Contact - B Artworks Gallery" />
-        <meta
-          property="og:description"
-          content="Find us on our all Social media  platforms."
-        />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
-        />
-      </Helmet>
+     <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
       <h1 className={styles['text']}>Contact Us</h1>
       <span className={styles['text1']}>Click on our social links:</span>
       <div className={styles['container1']}>

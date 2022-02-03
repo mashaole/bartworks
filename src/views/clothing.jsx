@@ -1,33 +1,17 @@
 import React from 'react'
-
-import { Helmet } from 'react-helmet'
-
 import GalleryCard3 from '../components/gallery-card3'
 import styles from './clothing.module.css'
+import Meta from "../components/meta"
+
+var description="View Some of B Artworks beautiful clothing in the gallery."
+var title="Clothing - B Artworks Gallery"
+var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/gallery/tpmeflsfrafye4rrj4di.jpg"
 
 const Clothing = () => {
   return (
     <div className={styles['container']}>
-      <Helmet>
-        <title>Clothing - B Artworks Gallery</title>
-        <meta
-          name="description"
-          content="View Some of B Artworks beautiful clothing in the gallery."
-        />
-   <meta
-      name="keywords"
-      content="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-    />
-        <meta property="og:title" content="Clothing - B Artworks Gallery" />
-        <meta
-          property="og:description"
-          content="View Some of B Artworks beautiful clothing in the gallery."
-        />
-        <meta
-          property="og:image"
-          content="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/gallery/tpmeflsfrafye4rrj4di.jpg"
-        />
-      </Helmet>
+      <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
       <div className={styles['Gallery']}>
         <h1 className={styles['text']}>Clothing</h1>
         <span className={styles['text1']}>

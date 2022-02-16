@@ -1,6 +1,6 @@
 import React,{useState,useEffect} from 'react'
 import ReactDOM from 'react-dom'
-import { BrowserRouter as Switch, Route} from 'react-router-dom';
+import { BrowserRouter as Router,Switch,Routes,Route} from 'react-router-dom';
 
 import './style.module.css'
 import Home from './views/home.jsx'
@@ -32,19 +32,20 @@ function App () {
   }
   else{
   return (
-    <Switch>
-      <div>
+    <Router>
         <Navbar />
-        <Route exact component={Home} path="/" />
-        <Route exact component={Artworks} path="/artworks" />
-        <Route exact component={Clothing} path="/clothing" />
-        <Route exact component={Artist} path="/artist" />
-        <Route exact component={Exhibitions} path="/exhibitions" />
-        <Route exact component={About} path="/about" />
-        <Route exact component={Contact} path="/contact" />
+        <Switch>
+        <Route exact path="/" component={Home} />
+        <Route exact path="/artworks" component={Artworks}  />
+        <Route exact path="/clothing" component={Clothing}/>
+        <Route exact path="/artist" component={Artist} />
+        <Route exact path="/exhibitions" component={Exhibitions}/>
+        <Route exact path="/about" component={About} />
+        <Route exact path="/contact" component={Contact} />
+        <Route path="*" component={Home} />
+        </Switch>
         <Footer/>
-      </div>
-    </Switch>
+    </Router>
   )
 }
 }

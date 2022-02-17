@@ -1,4 +1,4 @@
-import React from 'react'
+import React ,{useEffect} from 'react'
 import Meta from "../components/meta"
 import styles from './artist.module.css'
 
@@ -8,6 +8,22 @@ var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko
 var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
 
 const About = () => {
+  var i = 0;
+  var txt = "B Artworks is an art business that focuses on telling stories through making Artworks. \n We are not here to just sell, We are here to tell stories. \n B Artworks looks at how the environment affects us as human beings and how God uses it to build our character . Environmental psychology is a multidimensional field that focuses on the interplay between individuals and their surroundings. \n Everything that B Artworks does is to inspire people to Be Artworks that God has created them to be. \n Environmental pyschology is pivotal also in our storytelling through art. As B Artworks we are comitted to providing high quality products and we pay attention to giving great customer service. \n What differentiates us from other businesses is our ability to truly connect with our customers, and provide the exceptional compassionate service they deserve. \n We as B Artworks attribute our reputation to the lasting customer relationships we've developed throughout the years. \n We believe that all of our customers deserve the highest level of service and we are committed to providing just that."; 
+  var speed = 50;
+
+  useEffect(() => {
+    typeWriter()
+  }, [])
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("desc").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
   return (
     <div className={styles['container']}>
       <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
@@ -29,15 +45,7 @@ const About = () => {
             </svg>
           </div>
           <span className={styles['text01']}>
-            <span>
-            B Artworks is an art business that focuses on telling stories through making Artworks.
-We are not here to just sell, We are here to tell stories. 
-
-B Artworks looks at how the environment affects us as human beings and how God uses it to build our character .Environmental psychology is a multidimensional field that focuses on the interplay between individuals and their surroundings. 
-Everything that B Artworks does is to inspire people to Be Artworks that God has created them to be. Environmental pyschology is pivotal also in our storytelling through art. As B Artworks we are comitted to providing high quality products and we pay attention to giving great customer service.What differentiates us from other businesses is our ability to truly connect with our customers, and provide the exceptional, compassionate service they deserve.  
-
-We as B Artworks attribute our reputation to the lasting customer relationships we&apos;ve developed throughout the years. We believe that all of our customers deserve the highest level of service and we are committed to providing just that.
-            </span>
+            <span id="desc"/>
             <br></br>
             <span></span>
           </span>

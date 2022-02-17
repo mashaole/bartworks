@@ -1,17 +1,34 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import Meta from "../components/meta"
 import FeatureCard2 from '../components/feature-card2'
 import styles from './artist.module.css'
 
-var description="Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks"
-var title="Artist - B Artworks Gallery"
-var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
+var description = "Boitumelo Diseko is the Visual Artist behind B Artworks paintings, designs and artworks"
+var title = "Artist - B Artworks Gallery"
+var keywords = "B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image = "https://res.cloudinary.com/ddjvdcads/image/upload/v1640020423/b%20artworks_2021-12-20_19_11/Bio/rasjy1utvnorutafoedh.jpg"
 
 const Artist = () => {
+
+  var i = 0;
+  var txt = "Boitumelo Diseko's artworks are rooted in environmental psychology and the Christian faith. \nDiseko's work looks at how the environment affects us as human beings and how God uses it to build our character. \nEnvironmental psychology is a multidimensional field that focuses on the interplay between individuals and their surroundings. \nIt examines the way in which the natural environment and our built environments shap us as individuals.";
+  var speed = 50;
+
+  useEffect(() => {
+    typeWriter()
+  }, [])
+
+  function typeWriter() {
+    if (i < txt.length) {
+      document.getElementById("desc").innerHTML += txt.charAt(i);
+      i++;
+      setTimeout(typeWriter, speed);
+    }
+  }
+
   return (
     <div className={styles['container']}>
-     <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
+      <Meta Description={description} Title={title} Keywords={keywords} Image={image} />
       <h1 className={styles['text']}>Artist</h1>
       <div className={styles['Testimonial']}>
         <img
@@ -30,15 +47,7 @@ const Artist = () => {
             </svg>
           </div>
           <span className={styles['text01']}>
-            <span>
-              Boitumelo Diseko&apos;s artworks are rooted in environmental
-              psychology and the Christian faith. Diseko&apos;s work looks at
-              how the environment affects us as human beings and how God uses it
-              to build our character. Environmental psychology is a
-              multidimensional field that focuses on the interplay between
-              individuals and their surroundings. It examines the way in which
-              the natural environment and our built environments shap us as
-              individuals.
+            <span id="desc">
             </span>
             <br></br>
             <span></span>

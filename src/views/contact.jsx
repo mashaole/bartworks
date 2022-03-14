@@ -2,15 +2,15 @@ import React from 'react'
 import styles from './contact.module.css'
 import Meta from "../components/meta"
 
-var description="Find us on our all Social media  platforms."
-var title="Contact - B Artworks Gallery"
-var keywords="B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
-var image="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
+var description = "Find us on our all Social media  platforms."
+var title = "Contact - B Artworks Gallery"
+var keywords = "B Artworks Gallery,B Artworks,Artworks,Art,Visual,Boitumelo Diseko,Nelson,Nelson Makamo,Visual Artist,South African,South African Artist,Galleries,Paintings,Artworks,Design,Clothing,Exhibitions,Contact"
+var image = "https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/j9qxwbk3cjtnh7ohcyft.jpg"
 
 const Contact = () => {
   return (
     <div className={styles['container']}>
-     <Meta Description={description} Title={title} Keywords={keywords} Image={image}/>
+      <Meta Description={description} Title={title} Keywords={keywords} Image={image} />
       <h1 className={styles['text']}>Contact Us</h1>
       <span className={styles['text1']}>Click on our social links:</span>
       <div className={styles['container1']}>
@@ -35,7 +35,7 @@ const Contact = () => {
       </div>
       <div className={styles['SocialBar']}>
         <a
-          href="https://www.instagram.com/bartwor/"
+          href="https://www.instagram.com/b_artworksgallery/"
           target="_blank"
           rel="noreferrer noopener"
           className={styles['link2']}
@@ -45,7 +45,7 @@ const Contact = () => {
           </svg>
         </a>
         <a
-          href="https://www.facebook.com/Bartw0r"
+          href="https://www.facebook.com/boitumelo.diseko.169"
           target="_blank"
           rel="noreferrer noopener"
           className={styles['link3']}
@@ -57,7 +57,7 @@ const Contact = () => {
       </div>
       <img
         alt="image"
-        src="https://res.cloudinary.com/ddjvdcads/image/upload/v1641151042/b%20artworks_2021-12-20_19_11/art/l1dz8xoo9kv3eqb9dazi.png"
+        src="https://res.cloudinary.com/ddjvdcads/image/upload/v1647262048/b%20artworks_2021-12-20_19_11/art/bar3drhilxsvohgxed68.png"
         className={styles['image']}
         loading="lazy"
       />

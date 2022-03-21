@@ -74,7 +74,7 @@ const Artist = () => {
         <div className={styles['container3']}>
           <FeatureCard2
             title="Magazine Coverage"
-            description="The South African Artist magazine Issue no. 38 (2018) Startup AFRICA magazine Issue no. 11 (2019)"
+            description="The South African Artist magazine Issue no. 38 (2018), Startup AFRICA magazine Issue no. 11 (2019), Midrand Reporter 22 March (2022), The South African News (2022)"
             rootClassName="rootClassName"
           ></FeatureCard2>
           <FeatureCard2

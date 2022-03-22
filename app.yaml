@@ -1,5 +1,6 @@
 service: default
 runtime: nodejs14
+instance_class: F1
 handlers:
   # Serve all static files with url ending with a file extension
   - url: /(.*\..+)$
@@ -11,3 +12,8 @@ handlers:
     redirect_http_response_code: 301
     static_files: build/index.html
     upload: build/index.html
+automatic_scaling:
+  target_throughput_utilization: 0.8
+  min_instances: 0
+  max_instances: 2
+  max_concurrent_requests: 36

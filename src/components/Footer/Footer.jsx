@@ -12,7 +12,7 @@ function Footer() {
             <a href="https://www.iampresenting.com">
                 <img src={logo} loading="lazy" style={{ width: "80px", height: "30px" }} alt="IAmPresenting" />
             </a><hr />
-            Copyright © 2022 B Artworks.  All rights reserved.No part of this site may be reproduced without our written permission.
+            Copyright © 2022 B Artworks Gallery.  All rights reserved.No part of this site may be reproduced without our written permission.
         </div>
     )
 }

@@ -4,7 +4,6 @@ import { Link } from 'react-router-dom';
 import './Navbar.css';
 
 const navTitles = [
-	{ id: 1, title: 'Home', route: '/' },
 	{ id: 2, title: 'Artworks', route: '/artworks' },
 	{ id: 3, title: 'Clothing', route: '/clothing' },
 	{ id: 4, title: 'Artist', route: '/artist' },

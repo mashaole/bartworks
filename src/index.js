@@ -23,7 +23,6 @@ function App() {
       setLoading(false);
     }, 1500);
   }, []);
-
   if (loading) {
     return (
       <div style={{ height: "100vh", width: "100vw" }}>

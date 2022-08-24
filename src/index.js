@@ -35,7 +35,7 @@ function App() {
             height: "30%",
           }}
           loading="lazy"
-          src="https://res.cloudinary.com/ddjvdcads/image/upload/v1640020420/b%20artworks_2021-12-20_19_11/exhibit/tpquxqzqvj8pejyi367q.png"
+          src="https://res.cloudinary.com/ddjvdcads/image/upload/v1661348831/b%20artworks_2021-12-20_19_11/exhibit/dqxzulpumewb2pf7mqxj.png"
           alt=""
         />
       </div>

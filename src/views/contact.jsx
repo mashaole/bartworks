@@ -55,6 +55,15 @@ const Contact = () => {
           </svg>
         </a>
       </div>
+      <a className={styles['location-icon']} href="https://goo.gl/maps/kZiTEWeDdbiQcoCL8" >
+        <i className="fa-solid fa-location-dot"></i>
+      </a>
+      <div className={styles['location']}>
+        <a href="https://goo.gl/maps/kZiTEWeDdbiQcoCL8" >
+          The Main Change Building
+          20 kruger st, maboneng, johannesburg, 2094. 3rd Floor 301D
+        </a>
+      </div>
       <img
         alt="image"
         src="https://res.cloudinary.com/ddjvdcads/image/upload/v1647262048/b%20artworks_2021-12-20_19_11/art/bar3drhilxsvohgxed68.png"

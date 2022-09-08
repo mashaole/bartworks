@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "dependencies": {
+    "@builder.io/partytown": "^0.7.0",
     "classnames": "^2.3.1",
     "prop-types": "15.7.2",
     "react": "^16.13.1",
@@ -12,6 +13,7 @@
     "react-pretty-carousel": "^1.0.19",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "serve": "^14.0.1",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
@@ -19,7 +21,9 @@
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
-    "deploy": "npm run build && firebase deploy"
+    "deploy": "npm run build && firebase deploy",
+    "partytown": "partytown copylib public/~partytown",
+    "prod": "npm run build && npx serve -s build"
   },
   "browserslist": {
     "production": [

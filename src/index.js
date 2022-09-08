@@ -3,6 +3,7 @@ import ReactDOM from "react-dom";
 import reportWebVitals from "./reportWebVitals";
 import * as serviceWorkerRegistration from "./serviceWorkerRegistration";
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { Partytown } from "@builder.io/partytown/react";
 
 import "./style.module.css";
 import Home from "./views/home.jsx";
@@ -42,6 +43,7 @@ function App() {
   } else {
     return (
       <Router>
+        <Partytown debug={true} forward={["dataLayer.push"]} />
         <Navbar />
         <Switch>
           <Route exact path="/" component={Home} />
